@@ -1,4 +1,3 @@
-/* Ensure full height and box sizing */
 html, body {
   height: 100%;
   margin: 0;
@@ -6,16 +5,14 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Page container with 1-inch margins and light/thin border */
 .page-container {
-  margin: 1in; /* 1 inch from all edges, including bottom */
+  margin: 1in; 
   padding: 20px;
-  border: 1px solid #999; /* lighter and thinner border */
-  min-height: calc(100vh - 2in); /* ensures it fills vertical space minus margins */
+  border: 1px solid #999; 
+  min-height: calc(100vh - 2in); 
   box-sizing: border-box;
 }
 
-/* Light Theme */
 body {
   font-family: "Times New Roman", serif;
   font-size: 20px;
@@ -24,7 +21,6 @@ body {
   color: black;
 }
 
-/* Header styles */
 header {
   text-align: center;
   padding: 20px;
@@ -32,25 +28,24 @@ header {
 
 h1 {
   font-size: 36px;
-  letter-spacing: 2px; /* increased spacing */
+  letter-spacing: 2px; 
   text-transform: uppercase;
-  margin-bottom: 0.1em; /* reduced space below h1 */
-  font-weight: 300; /* lighter font weight */
+  margin-bottom: 0.1em; 
+  font-weight: 300; 
 }
 
 h2 {
   font-size: 24px;
   color: #006EB6;
-  letter-spacing: 1px; /* increased spacing */
-  border-bottom: 1px solid #999; /* underline spans full width */
-  display: block; /* make h2 a block element to span full width */
-  max-width: 600px; /* match main and ol width */
-  margin: 0 auto 8px auto; /* center and add space below */
-  padding-bottom: 0; /* remove old padding */
-  font-weight: 300; /* lighter font weight */
+  letter-spacing: 1px; 
+  border-bottom: 1px solid #999; 
+  display: block; 
+  max-width: 600px; 
+  margin: 0 auto 8px auto; 
+  padding-bottom: 0; 
+  font-weight: 300; 
 }
 
-/* Main content */
 main {
   max-width: 600px;
   margin: 0 auto;
@@ -63,18 +58,16 @@ h3 {
   font-weight: normal;
 }
 
-/* Lists */
 ul, ol {
-  max-width: 600px; /* match h2 underline width */
+  max-width: 600px; 
   margin: 0 auto;
   padding-left: 20px;
 }
 
 ol li {
-  margin-bottom: 0.25in; /* 0.25 inch spacing between bullet points */
+  margin-bottom: 0.25in; 
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 10px;
@@ -82,10 +75,9 @@ footer {
 
 #logo {
   width: 150px;
-  height: auto; /* maintain aspect ratio */
+  height: auto; 
 }
 
-/* Theme selector */
 .theme-selector-container {
   display: flex;
   justify-content: center;
@@ -97,7 +89,6 @@ footer {
   padding: 5px;
 }
 
-/* Dark Theme */
 body.dark {
   background-color: #333;
   color: white;
@@ -106,5 +97,3 @@ body.dark {
 body.dark h2 {
   color: #A7C6FF;
 }
-
-/* Removed body.dark #logo content rule to allow JS src changes to work */
