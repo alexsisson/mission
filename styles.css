@@ -1,14 +1,30 @@
-/* Base Styles (Light Theme by default) */
+/* Ensure full height and box sizing */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page container with 1-inch margins and light/thin border */
+.page-container {
+  margin: 1in; /* 1 inch from all edges, including bottom */
+  padding: 20px;
+  border: 1px solid #999; /* lighter and thinner border */
+  min-height: calc(100vh - 2in); /* ensures it fills vertical space minus margins */
+  box-sizing: border-box;
+}
+
+/* Light Theme */
 body {
   font-family: "Times New Roman", serif;
   font-size: 20px;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
   background-color: white;
   color: black;
 }
 
+/* Header styles */
 header {
   text-align: center;
   padding: 20px;
@@ -16,16 +32,25 @@ header {
 
 h1 {
   font-size: 36px;
-  letter-spacing: 1px;
+  letter-spacing: 2px; /* increased spacing */
   text-transform: uppercase;
+  margin-bottom: 0.1em; /* reduced space below h1 */
+  font-weight: 300; /* lighter font weight */
 }
 
 h2 {
   font-size: 24px;
   color: #006EB6;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px; /* increased spacing */
+  border-bottom: 1px solid #999; /* underline spans full width */
+  display: block; /* make h2 a block element to span full width */
+  max-width: 600px; /* match main and ol width */
+  margin: 0 auto 8px auto; /* center and add space below */
+  padding-bottom: 0; /* remove old padding */
+  font-weight: 300; /* lighter font weight */
 }
 
+/* Main content */
 main {
   max-width: 600px;
   margin: 0 auto;
@@ -34,12 +59,22 @@ main {
 
 h3 {
   font-size: 22px;
+  font-style: italic;
+  font-weight: normal;
 }
 
-ul {
+/* Lists */
+ul, ol {
+  max-width: 600px; /* match h2 underline width */
+  margin: 0 auto;
   padding-left: 20px;
 }
 
+ol li {
+  margin-bottom: 0.25in; /* 0.25 inch spacing between bullet points */
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 10px;
@@ -47,8 +82,10 @@ footer {
 
 #logo {
   width: 150px;
+  height: auto; /* maintain aspect ratio */
 }
 
+/* Theme selector */
 .theme-selector-container {
   display: flex;
   justify-content: center;
@@ -67,9 +104,7 @@ body.dark {
 }
 
 body.dark h2 {
-  color: #A7C6FF; /* Light blue for dark theme */
+  color: #A7C6FF;
 }
 
-body.dark #logo {
-  content: url('byui-logo_blue.webp');
-}
+/* Removed body.dark #logo content rule to allow JS src changes to work */

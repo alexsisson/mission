@@ -4,13 +4,12 @@ const body = document.body;
 const logo = document.querySelector('#logo');
 
 function changeTheme() {
-  // Check if the selected value is 'dark' or 'light'
   if (themeSelector.value === 'dark') {
-    body.classList.add('dark'); // Add the 'dark' class to body
-    logo.src = 'byui-logo-white.png'; // Change the logo to the white version
+    body.classList.add('dark');
+    logo.src = 'byui-logo-white.png';  // white logo file (same dimensions)
   } else {
-    body.classList.remove('dark'); // Remove the 'dark' class
-    logo.src = 'byui-logo_blue.webp'; // Revert the logo to the blue version
+    body.classList.remove('dark');
+    logo.src = 'byui-logo_blue.webp';  // blue logo file (same dimensions)
   }
 }
 
