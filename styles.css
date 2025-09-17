@@ -1,0 +1,75 @@
+/* Base Styles (Light Theme by default) */
+body {
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  color: #006EB6;
+  letter-spacing: 0.5px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+#logo {
+  width: 150px;
+}
+
+.theme-selector-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#themeSelector {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.dark h2 {
+  color: #A7C6FF; /* Light blue for dark theme */
+}
+
+body.dark #logo {
+  content: url('byui-logo_blue.webp');
+}
